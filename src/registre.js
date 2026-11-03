@@ -15,9 +15,10 @@ export function formaterReleve(releve)
 // ou 'Aucun relevé enregistré.' si la liste est vide.
 export function listerReleves(releves) {
  if (releves.length === 0) {
-  return 'aucun relevé disponible.';
+  return 'Aucun relevé enregistré.';
  }
- return releves.map(formaterReleve).join ('\n')
+ const Lignes = releves.map(formaterReleve);
+ return Lignes.join ('\n')
 }
 
 // Renvoie le relevé qui a cet identifiant, ou undefined s'il n'existe pas.
@@ -32,7 +33,28 @@ return releves.find(releve => releve.id === id);
 // (négatif ou décimal accepté) · pluieMm nombre positif ou nul · humiditeAirPct nombre entre 0 et 100.
 // Un message par règle non respectée ; n'ajoutez aucune autre règle. Le journal reçu n'est pas modifié.
 export function verifierReleve(saisie, releves) {
-  throw new Error('TODO : coder verifierReleve dans src/registre.js');
+  const erreurs = []
+  if (!saisie.id) {
+   erreurs.push('Identifiant absent.');
+  } else if (trouverParId(releves, saisie.id)){
+    erreurs.push(`Identifiant ${saisie.id} déja présent. `);
+  }
+  if (!estDateValide(saisie.date)) {
+    erreurs.push(`Date ${saisie.date} déja utilisé.`);
+  }
+  const temperature = versNombre(saisie.temperatureC);
+  if (Number.isNaN(temperature)) {
+    erreurs.push(`Température ${saisie.temperatureC} absente.`);
+  }
+  const pluie = versNombre(saisie.pluieMm);
+  if (Number.isNaN(pluie) || pluie < 0){
+   erreurs.push(`Pluie ${saisie.pluieMm} absente.`);
+  }
+  const humidite = versNombre(saisie.humiditeAirPct);
+  if (Number.isNaN(humidite) || humidite < 0 || humidite > 100) {
+    erreurs.push(`Humidité ${saisie.humiditeAirPct} absente.`);
+  }
+  return erreurs;
 }
 
 // Fabrique le relevé à enregistrer à partir d'une saisie VALIDE : les trois mesures deviennent des nombres.
