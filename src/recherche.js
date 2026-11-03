@@ -7,7 +7,8 @@ export const SEUIL_JOUR_PLUVIEUX = 10;
 
 // Renvoie le premier relevé fait à cette date (texte AAAA-MM-JJ), ou undefined s'il n'y en a pas.
 export function trouverParDate(releves, date) {
-  throw new Error('TODO : coder trouverParDate dans src/recherche.js');
+ return releves.find(releve => releve.date === date);
+ 
 }
 
 // Renvoie un NOUVEAU tableau avec les relevés dont la pluie est SUPÉRIEURE OU ÉGALE au seuil (en mm).
