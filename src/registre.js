@@ -14,7 +14,10 @@ export function formaterReleve(releve)
 // Renvoie un texte avec un relevé par ligne (lignes séparées par '\n'),
 // ou 'Aucun relevé enregistré.' si la liste est vide.
 export function listerReleves(releves) {
-  throw new Error('TODO : coder listerReleves dans src/registre.js');
+ if (releves.length === 0) {
+  return 'aucun relevé disponible.';
+ }
+ return releves.map(formaterReleve).join ('\n')
 }
 
 // Renvoie le relevé qui a cet identifiant, ou undefined s'il n'existe pas.
