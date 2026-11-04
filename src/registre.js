@@ -40,7 +40,7 @@ export function verifierReleve(saisie, releves) {
     erreurs.push(`Identifiant ${saisie.id} déja présent. `);
   }
   if (!estDateValide(saisie.date)) {
-    erreurs.push(`Date ${saisie.date} déja utilisé.`);
+    erreurs.push(`Date ${saisie.date} invalide.`);
   }
   const temperature = versNombre(saisie.temperatureC);
   if (Number.isNaN(temperature)) {
