@@ -16,11 +16,11 @@ Journées avec au moins 10 mm : seules deux lignes atteignent le seuil, M03 (12 
 
 | Action | Attendu | Obtenu | Testeur |
 | --- | --- | --- | --- |
-| Température moyenne|  28°C| 28°C |
-| Température minimale| 26°C | 26°C|        | 
-| Température maximale| 30°C| 30°C |
-| cumul de pluie | 45 mm| 45 mm |
-| deux journées au moins >=| 2 journées (M03 , M08)| 2 jpurnées (M03, M08)|  | 
+| Température moyenne|  28°C| 28°C | DIBY Konan François Ebenezer
+| Température minimale| 26°C | 26°C|      DIBY Konan François Ebenezer  | 
+| Température maximale| 30°C| 30°C |DIBY Konan François Ebenezer
+| cumul de pluie | 45 mm| 45 mm |DIBY Konan François Ebenezer
+| deux journées au moins >=| 2 journées (M03 , M08)| 2 jpurnées (M03, M08)| DIBY Konan François Ebenezer | 
 
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
