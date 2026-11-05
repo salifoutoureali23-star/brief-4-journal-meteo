@@ -13,7 +13,7 @@ Le Journal météorologique de la ferme est ​un outil fait pour les agriculteu
 - Node.js 20 ou plus récent, Git ; aucune bibliothèque à installer.
 
 ```bash
-git clone https://github.com/VOTRE-COMPTE/brief-4-journal-meteo.git
+git clone https://github.com/salifoutoureali23-star/brief-4-journal-meteo.git
 cd brief-4-journal-meteo
 node app.js
 npm test
@@ -25,12 +25,12 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [x ] Données lues et enregistrées dans `donnees/releves.json`
-- [x ] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
-- [ x] Lister les relevés, message si le journal est vide
-- [x ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
-- [x ] Trier par température ou par pluie
-- [x ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
+- [X] Données lues et enregistrées dans `donnees/releves.json`
+- [X] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
+- [X] Lister les relevés, message si le journal est vide
+- [X] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
+- [X] Trier par température ou par pluie
+- [X] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
 - [ ] Bonus : supprimer et modifier un relevé (choix 6 et 7)
 - [ ] Bonus : tri par température décroissante, journée la plus chaude
 
