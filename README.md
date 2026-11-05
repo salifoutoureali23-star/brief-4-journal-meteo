@@ -1,10 +1,12 @@
 # Journal météorologique de la ferme
 
-> Projet individuel du SAS DFS, brief 4 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
+> Projet individuel du SAS DFS, brief 4 sujet : [SUJET.md] : JOURNAL METEOROLOGIQUE DE LA FERME
 
 ## Contexte
 
-✏️ *En trois à cinq phrases : qui utilise l'outil, quel problème il résout, ce qu'il ne permet pas de conclure.*
+## Contexte
+
+Le Journal météorologique de la ferme est ​un outil fait pour les agriculteurs, les techniciens ​agricoles, les étudiants en agronomie et les chefs ​d'exploitations agricoles. Il sert à noter et à ​regarder les informations sur la température, la pluie ​et l'humidité relative de l'air․ Ça aide à ​suivre les changements météo pour permettre aux utilisateurs ​d'organiser un peu mieux certaines tâches dans le ​travail agricole. Mais il ne permet ni de ​prévoir la météo ni de tirer des résultats ​sur le climat sur une longue période․
 
 ## Prérequis et lancement
 
@@ -23,22 +25,26 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/releves.json`
-- [ ] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les relevés, message si le journal est vide
-- [ ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
-- [ ] Trier par température ou par pluie
-- [ ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
+- [x ] Données lues et enregistrées dans `donnees/releves.json`
+- [x ] Ajouter un relevé, saisies invalides refusées sans arrêter le programme
+- [ x] Lister les relevés, message si le journal est vide
+- [x ] Rechercher par identifiant ou par date ; journées pluvieuses (au moins 10 mm)
+- [x ] Trier par température ou par pluie
+- [x ] Synthèse : température moyenne, minimale et maximale de la série, cumul de pluie, journées pluvieuses
 - [ ] Bonus : supprimer et modifier un relevé (choix 6 et 7)
 - [ ] Bonus : tri par température décroissante, journée la plus chaude
 
 ## Données
 
-✏️ *Le fichier, le nombre de relevés, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'ils sont fictifs.*
+✏️ Le journal contient initialement 10 relevés fictifs, couvrant la période du 15 au 24 octobre 2026. (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md))
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : dix jours de relevés forment une courte série, ils ne décrivent pas le climat de la région.*
+Les dix jours de données au départ font ​une petite série météo et ne permettent pas ​de décrire le climat dans une région.
+
+Le seuil ​de 10 mm utilisé pour repérer une journée ​pluvieuse, c'est un seuil fait pour apprendre et ​ça permet pas de voir venir les inondations ​ou le stress hydrique.
+
+L'humidité relative de l'air, ça ​donne pas l'humidité du sol.
 
 ## Documents
 
@@ -46,4 +52,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+✏️ *Ali Salifou Touré, salifoutoureali23-star Entraide : jules christ, sur les notions en javascript, les méthodes de tableau
