@@ -12,7 +12,7 @@ export function moyenneTemperature(releves) {
     (total, releve) => total + releve.temperatureC,
     0
   );
-   return Math.round(somme / releves.length);
+   return Math.round((somme / releves.length) *10) / 10;
 }
 
 // Renvoie le cumul (la somme) des pluies, en mm. Liste vide : 0.
