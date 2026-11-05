@@ -16,15 +16,11 @@ Journées avec au moins 10 mm : seules deux lignes atteignent le seuil, M03 (12 
 
 | Action | Attendu | Obtenu | Testeur |
 | --- | --- | --- | --- |
-| ajouter un relevé, quitter puis relancer| le relevé est toujours est présent après rédemarrage| le relevé est toujours présent après redémarrage effectivement| M11|2026-11-03|28°C |6 mm | air 76%|
-| Saisir pluie négative| saisie négative, journal inchangé | relevé refusé : la pluie doit être un nombre positif ou nul en mm, journal inchangé|-12 | 
-| saisir une humidité de 101%| saisie refusée, journal inchangé| relevé refusé : l'humidité relative de l'air entre 0 et 100, journal inchangé. | 101
-| Rechercher la date `2026-10-22` | Le relevé M08 est affiché | date (AAAA-MM-JJ):2026-10-30 |
-M08| 2026-10-22| 26°C| 15 mm | air 85 % | 2026-10-22
-
-Trier par pluie | les pluies apparaissent par ordre croissant, le journal reste initial inchangé| A exécuter | 2026-10-30 |
-
-|Afficher la synthèse | 28° C ; 26° C ; 30° C ; 45 mm ; 2 journées pluvieuses | M03 | 2026-10-17 | 26°C | 12 mm | air 82 %
+| Température moyenne|  28°C| 28°C |
+| Température minimale| 26°C | 26°C|        | 
+| Température maximale| 30°C| 30°C |
+| cumul de pluie | 45 mm| 45 mm |
+| deux journées au moins >=| 2 journées (M03 , M08)| 2 jpurnées (M03, M08)|  | 
 
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
