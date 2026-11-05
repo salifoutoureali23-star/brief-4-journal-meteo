@@ -10,7 +10,7 @@
 | Fiche 4 : rechercher et trier ; choix 3 et 4 |03-11-2026 | 03-11-2026 | https://github.com/salifoutoureali23-star/brief-4-journal-meteo/commit/e1fc1d41ffc4eca898137b6f09056e97adc034cd
 | Fiche 5 : synthèse ; choix 5 |03-11-2026 |03-11-2026| https://github.com/salifoutoureali23-star/brief-4-journal-meteo/commit/0dd0e1f77af9472381ecb1fdb1b2047c0f306f7a
 | Tests par un camarade ; mes propres tests | | | |
-| Fiche agronomique ; README ; documents | | | |
+| Fiche agronomique ; README ; documents |05-11-2026 | 05-11-2026|https://github.com/salifoutoureali23-star/brief-4-journal-meteo/commit/b082e2441d0c87d5a0c38ffa96cfd95dd0e3d702 |
 | Dépôt cloné et lancé ailleurs ; démonstration répétée | | | |
 | Bonus | | | |
 
